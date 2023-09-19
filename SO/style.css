@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem;
+}
+
+body{
+    background-color: #181717;
+}
+
+/* Header */
+
+header{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size:4rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: #0e0b99;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 50%;
+    background: #0e0b99;
+    
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #0e0b99;
+    background: #fff;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+/* Footer */
+
+/*Emergencia codigo azul*/
+
+.bottom-left-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bottom-left-button:hover {
+    background-color: #0056b3;
+}
+
+/* Sala */
+
+.datos {
+    padding-top: 10%;
+}
+
+.cateogria_sala{
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Iniciar sesion y registrarse */
+
+.clear{
+	clear: both;
+}
+
+.main{
+	width: 100%;
+	height: 85.25vh;
+	background-color: #181717;
+}
+
+.card{
+	width: 400px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.card-title{
+	width: 100%;
+}
+
+.card-title h3{
+	color: #0e0b99;
+	text-align: center;
+	padding: 20px 0;
+    font-size: 2rem;
+}
+
+.card-title h3 > span{
+	color: #848484;
+}
+
+.card-body{
+	background-color: #121212;
+	padding: 10px 0px;
+	border-radius: 5px;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.card-body-top{
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #262626;
+}
+
+.card-body-top > .btn{
+	border: 0;
+	background-color: transparent;
+	color: #848484;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	width: 180px;
+	padding: 20px 0;
+}
+
+#login{
+	color: #0e0b99;
+}
+
+#register{
+	color: #848484;
+}
+
+#pointer-btn{
+	position: absolute;
+	bottom:-1px;
+	left: 30px;
+	width: 120px;
+	height: 2px;
+	color: #0e0b99;
+	transition: 0.5s all ease;
+}
+
+.card-body-login{
+	width: 100%;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.card-body-login > #login-form{
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	text-align: center;
+	transition: 0.5s all ease;
+}
+
+.card-body-login > #register-form{
+	position: absolute;
+	top: 20px;
+	left: 450px;
+	text-align: center;
+	transition: 0.5s all ease;
+}
+
+.input-form{
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	border-bottom: 1px solid #0e0b99;
+	width: 350px;
+	padding: 15px 0px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	outline: none;
+}
+
+.submit-form{
+	background-color: #0e0b99;
+	color: #000;
+	border: none;
+	padding: 10px 25px;
+	font-size: 15px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 50px;
+}
+
+/* Mapa Virtual */
+
+.mapa_virtual{
+    padding-left: 12%;
+    padding-right: 25%;
+}
+
+.mapa_virtual svg{
+    flex:0 0 auto;
+    align-items: center;
+    width: 1000px;
+    height: 1000px;
+}
+
+/* Media Query */
+
+@media(max-width: 960px){
+    html{
+        font-size: 55%; 
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width: 768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #0e0b99;
+    }
+    
+}
+
+
+
+
+
+
+
+

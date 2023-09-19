@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Sombra Del Imperio</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">Hospital</a>
+        <nav class="navbar">
+             <a href="index.html">Inicio</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <a href="#" class="fas fa-user-alt"></a>
+        </div>
+    </header>
+
+    <div class="main">
+		<div class="card">
+			<div class="card-title">
+				<h3>Usuario <span id="action_title">Inicio</span></h3>
+			</div>
+			<div class="card-body">
+				<div class="card-body-top">
+					<button id="login" class="btn" name="login" onclick="login()">Iniciar Sesion</button>
+					<button id="register" class="btn" name="register" onclick="register()">Registrarse</button>
+					<div id="pointer-btn"></div>
+				</div>
+				<div class="card-body-login">
+					<form id="login-form">
+						<input class="input-form" type="email" placeholder="Ponga su nombre" required><br><br>
+						<input class="input-form" type="password" placeholder="Ponga su contraseña" required><br><br><br>
+						<input class="submit-form" type="submit" value="Iniciar Sesion">
+					</form>
+					<form id="register-form">
+						<input class="input-form" type="name" placeholder="Ponga su nombre" required><br><br>
+						<input class="input-form" type="email" placeholder="Ponga su E-mail" required><br><br>
+						<input class="input-form" type="password" placeholder="Ponga su contraseña" required><br><br>
+						<input class="submit-form" type="submit" value="Registrarse">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <footer>
+        
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
